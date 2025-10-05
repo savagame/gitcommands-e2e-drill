@@ -1,4 +1,4 @@
-# Git Basics - Day 10-12
+# Git Basics
 Senior-level, step-by-step practice for `init`, `clone`, `add`, `commit`, `push`
 
 ## Before You Start
