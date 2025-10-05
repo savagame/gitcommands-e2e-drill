@@ -24,3 +24,19 @@ git add .
 git commit -m "chore: init"
 git remote add origin git@github.com:YOURUSER/gitcommands-e2e-drill.git
 git push -u origin main
+
+## Clone & Branch Hygiene
+git clone --depth=20 git@github.com:YOURUSER/gitcommands-e2e-drill.git
+cd gitcommands-e2e-drill
+git switch -c feat/example
+echo "change" > example.txt
+git add -p
+git commit -m "feat: example change"
+git push -u origin HEAD
+
+## Stage Intentionally, Amend, Push 
+git add -p 
+git commit -m "fix: correct section"
+git commit --amend -m "fix(docs): correct section"
+git push --force-with-lease
+
